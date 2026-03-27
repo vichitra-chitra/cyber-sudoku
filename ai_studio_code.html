@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Sudoku</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="neon-text">CYBER SUDOKU</h1>
+            <p class="subtitle">System Initialization: <span id="status">Ready</span></p>
+        </header>
+
+        <div class="controls">
+            <select id="difficulty" class="cyber-select">
+                <option value="easy">Level 1: Easy</option>
+                <option value="medium">Level 2: Medium</option>
+                <option value="hard">Level 3: Hard</option>
+            </select>
+            <button id="generate-btn" class="cyber-btn">Generate Matrix</button>
+            <button id="check-btn" class="cyber-btn secondary">Verify Logic</button>
+        </div>
+
+        <div class="board-wrapper">
+            <div class="scanline"></div>
+            <div id="sudoku-board"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
